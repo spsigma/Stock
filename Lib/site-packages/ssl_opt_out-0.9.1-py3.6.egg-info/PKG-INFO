@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: ssl-opt-out
+Version: 0.9.1
+Summary: Opt-out of Python SSL certificate verification.
+Home-page: https://github.com/cchurch/ssl-opt-out
+Author: Chris Church
+Author-email: chris@ninemoreminutes.com
+License: BSD
+Description: |Build Status| |PyPI Version| |Python Versions|
+        
+        SSL Opt-Out
+        ===========
+        
+        **Don't install this package. Ever. Fix your code to explicitly verify
+        or ignore SSL certificates.**
+        
+        If you're still reading, installing this package will opt out of *ALL*
+        SSL certificate verification added in Python 2.7.9 and Python 3.4 and
+        later via
+        `PEP-0476 <https://www.python.org/dev/peps/pep-0476/#opting-out>`__.
+        This approach can serve as a quick workaround when it is not reasonable
+        to modify existing code or third party libraries.
+        
+        .. |Build Status| image:: http://img.shields.io/travis/cchurch/ssl-opt-out.svg
+           :target: https://travis-ci.org/cchurch/ssl-opt-out
+        .. |PyPI Version| image:: https://img.shields.io/pypi/v/ssl-opt-out.svg
+           :target: https://pypi.python.org/pypi/ssl-opt-out
+        .. |Python Versions| image:: https://img.shields.io/pypi/pyversions/ssl-opt-out.svg
+           :target: https://pypi.python.org/pypi/ssl-opt-out
+        
+Keywords: python ssl
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Software Development :: Libraries

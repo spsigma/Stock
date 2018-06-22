@@ -1,0 +1,32 @@
+
+      [httpencode.format]
+      name json = httpencode.json:json [json]
+      application/json to python = httpencode.json:json [json]
+      # I'm not terribly comfortable with this one:
+      application/x-javascript to python = httpencode.json:json [json]
+      text/x-json to python = httpencode.json:json [json]
+
+      application/x-www-form-urlencoded to cgi.FieldStorage = httpencode.form:form
+      multipart/form-data to cgi.FieldStorage = httpencode.form:form
+      name form = httpencode.form:form
+
+      application/x-www-form-urlencoded to python = httpencode.form:pyform
+      multipart/form-data to python = httpencode.form:pyform
+      name pyform = httpencode.form:form
+
+      text/xml to lxml = httpencode.lxmlformat:xml [lxml]
+      application/xml to lxml = httpencode.lxmlformat:xml [lxml]
+      name lxml = httpencode.lxmlformat:xml [lxml]
+
+      text/html to lxml = httpencode.lxmlformat:html [lxml]
+      name lxml_html = httpencode.lxmlformat:html [lxml]
+
+      text/xml to ElementTree = httpencode.etree:xml [etree]
+      application/xml to ElementTree = httpencode.etree:xml [etree]
+      name etree = httpencode.etree:xml [etree]
+
+      text/html to BeautifulSoup = httpencode.bsoupfilter:bsoup [BeautifulSoup]
+      name BeautifulSoup = httpencode.bsoupfilter:bsoup [BeautifulSoup]
+      name bsoup = httpencode.bsoupfilter:bsoup [BeautifulSoup]
+      
+      
